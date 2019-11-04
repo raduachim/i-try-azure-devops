@@ -24,3 +24,6 @@ steps:
     repository: 'raduachim/i-try-azure-devops'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    tags: |
+      $(Build.BuildId)
+      latest
